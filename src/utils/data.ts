@@ -1,3 +1,4 @@
+import { toast } from "@/hooks/use-toast";
 import { ROUTES, TIMETABLE_ROUTES } from "../config/routes";
 
 export const sideBarData = [
@@ -280,6 +281,11 @@ export const dashboardCards = [
     image: "/images/category.svg",
     title: "My Performance",
     navLink: ROUTES.DASHBOARD,
+    onclick: () =>
+      toast({
+        title: "Feature Coming Soon",
+        description: "This feature is currently under development!",
+      }),
   },
   {
     image: "/images/note.svg",

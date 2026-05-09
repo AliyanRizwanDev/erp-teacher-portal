@@ -4,11 +4,12 @@ interface CardProps {
   image: string;
   title: string;
   navLink: string;
+  onclick?: () => void;
 }
 
-export const Card = ({ image, title, navLink }: CardProps) => {
+export const Card = ({ image, title, navLink, onclick }: CardProps) => {
   return (
-    <Link to={navLink}>
+    <Link to={navLink} onClick={onclick}>
       <div className=" w-full bg-white rounded-2xl p-5 flex items-center ">
         <div className="flex items-center justify-center flex-[0.4]">
           <img src={image} alt={title} className="w-24 h-24" />

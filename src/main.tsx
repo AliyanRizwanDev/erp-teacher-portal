@@ -6,6 +6,7 @@ import { ROUTES } from "./config/routes.ts";
 import { Login } from "./pages/login/index.tsx";
 import { pageRoutes } from "./config/page-router.tsx";
 import Layout from "./components/common/Layout.tsx";
+import { Toaster } from "./components/ui/toaster";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")!).render(
           ))}
         </Route>
       </Routes>
+      <Toaster />
     </BrowserRouter>
-  </StrictMode>
+  </StrictMode>,
 );
