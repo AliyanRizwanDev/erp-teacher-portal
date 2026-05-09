@@ -195,9 +195,8 @@ export const NominalRoll = () => {
     initialItemsPerPage: 10,
   });
 
-  const onSubmit = (data: NominalRollFormValues) => {
+  const onSubmit = (_data: NominalRollFormValues) => {
     setShowReport(true);
-    console.log(data);
   };
 
   return (
@@ -214,7 +213,7 @@ export const NominalRoll = () => {
               labelClassName="!font-medium"
               placeholder="Enter Campus"
               className="!rounded-lg !bg-[#e8ebef]"
-              value={"Campus_01"}
+              value={"North Campus"}
               disabled
             />
           </div>

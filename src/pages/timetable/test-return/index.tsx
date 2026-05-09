@@ -26,7 +26,7 @@ interface TestReturnFormValues {
 export const TestReturn = () => {
   const { control, handleSubmit } = useForm<TestReturnFormValues>({
     defaultValues: {
-      campus: "Campus_01",
+      campus: "North Campus",
       program: "Intermediate",
       discipline: "FSc (Pre-Med)",
       section: "RMB1",
@@ -40,9 +40,7 @@ export const TestReturn = () => {
       testReturned: "",
     },
   });
-  const onSubmit = (data: TestReturnFormValues) => {
-    console.log(data);
-  };
+  const onSubmit = (_data: TestReturnFormValues) => {};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

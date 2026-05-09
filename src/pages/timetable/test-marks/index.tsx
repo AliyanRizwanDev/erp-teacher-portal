@@ -119,7 +119,7 @@ const sampleData: StudentData[] = [
 export const TestMarks = () => {
   const { control, handleSubmit } = useForm<TestMarksFormValues>({
     defaultValues: {
-      campus: "Campus_01",
+      campus: "North Campus",
       program: "Intermediate",
       discipline: "FSc (Pre-Med)",
       section: "RMB1",

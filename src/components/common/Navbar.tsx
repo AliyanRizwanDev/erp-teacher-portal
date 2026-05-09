@@ -54,7 +54,7 @@ const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
       id: 3,
       icon: <IoHomeOutline className="text-white text-lg" />,
       iconBg: "bg-mainColor",
-      title: "Login from 72.255.39.145",
+      title: "Login from 192.168.1.100",
       subtitle: "Logged in at 05:11:12pm",
       time: "2 day ago",
     },
@@ -102,7 +102,7 @@ const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
                     for (const item of timeTableSideBarData) {
                       if (item.children) {
                         const activeChild = item.children.find((child) =>
-                          location.pathname.includes(child.path)
+                          location.pathname.includes(child.path),
                         );
                         if (activeChild) return activeChild.text;
                         if (location.pathname.includes(item.path))
@@ -149,7 +149,7 @@ const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
                       >
                         {item.children.map((child) => {
                           const isActiveChild = location.pathname.includes(
-                            child.path
+                            child.path,
                           );
                           return (
                             <DropdownMenuItem
@@ -194,7 +194,7 @@ const Navbar = ({ isOpen, setIsOpen }: PropsType) => {
           {timeTableSideBarData.map((item, index) => {
             const isActive = item.children
               ? [item.path, ...item.children.map((child) => child.path)].some(
-                  (path) => location.pathname.includes(path)
+                  (path) => location.pathname.includes(path),
                 )
               : location.pathname.includes(item.path);
 

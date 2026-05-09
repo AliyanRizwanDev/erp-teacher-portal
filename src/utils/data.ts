@@ -114,10 +114,10 @@ export const timeTableSideBarData = [
 ];
 
 export const loginDropdownOptions = [
-  { value: "Head Office", label: "Head Office" },
+  { value: "Main Office", label: "Main Office" },
   {
-    value: "HQ (Corporate Office)",
-    label: "HQ (Corporate Office)",
+    value: "Regional Office",
+    label: "Regional Office",
   },
 ];
 
@@ -144,60 +144,58 @@ export const sectionDropdownOptions = [
 ];
 
 export const ProjectDropdownOptions = [
-  { value: "Head Office", label: "Head Office" },
+  { value: "Main Office", label: "Main Office" },
   {
-    value: "Evening Coaching/Entry Test",
-    label: "Evening Coaching/Entry Test",
+    value: "Development Division",
+    label: "Development Division",
   },
-  { value: "Colleges", label: "Colleges" },
-  { value: "Schools", label: "Schools" },
-  { value: "7Cs Schools", label: "7Cs Schools" },
-  { value: "Virtual Campus", label: "Virtual Campus" },
-  { value: "Foreign Test", label: "Foreign Test" },
+  { value: "College Programs", label: "College Programs" },
+  { value: "School Programs", label: "School Programs" },
+  { value: "Training Programs", label: "Training Programs" },
+  { value: "Online Programs", label: "Online Programs" },
+  { value: "International Programs", label: "International Programs" },
   {
-    value: "Evening Coaching (Franchise)",
-    label: "Evening Coaching (Franchise)",
+    value: "Partner Locations",
+    label: "Partner Locations",
   },
 ];
 
 export const CampusDropdownOptions = [
-  { value: "HQ (Corporate Office)", label: "HQ (Corporate Office)" },
-  { value: "Campus_01 (Main Office)", label: "Campus_01 (Main Office)" },
-  { value: "Campus_02 (Secondary)", label: "Campus_02 (Secondary)" },
-  { value: "Campus_03 (Tertiary)", label: "Campus_03 (Tertiary)" },
-  { value: "Campus_04 (Quaternary)", label: "Campus_04 (Quaternary)" },
-  { value: "Campus_05 (Storage)", label: "Campus_05 (Storage)" },
-  { value: "Campus_06 (Studios)", label: "Campus_06 (Studios)" },
-  { value: "Campus_07 (Operations)", label: "Campus_07 (Operations)" },
-  { value: "Virtual_Campus_01 (Main)", label: "Virtual_Campus_01 (Main)" },
+  { value: "Central Campus", label: "Central Campus" },
+  { value: "North Campus", label: "North Campus" },
+  { value: "South Campus", label: "South Campus" },
+  { value: "East Campus", label: "East Campus" },
+  { value: "West Campus", label: "West Campus" },
+  { value: "Administrative Hub", label: "Administrative Hub" },
+  { value: "Learning Center", label: "Learning Center" },
+  { value: "Student Services", label: "Student Services" },
+  { value: "Remote Campus", label: "Remote Campus" },
 ];
 
 export const topicOptions = [
   {
-    value:
-      "(1-Basic Concepts) Introduction to Board Pattern, Marks Distribution & how to study Chemistry, Introduction to Basic Concepts",
-    label:
-      "(1-Basic Concepts) Introduction to Board Pattern, Marks Distribution & how to study Chemistry, Introduction to Basic Concepts",
+    value: "(1-Module 1) Course Introduction & Learning Objectives",
+    label: "(1-Module 1) Course Introduction & Learning Objectives",
   },
   {
-    value: "(1-Basic Concepts) Molar volume, example-10",
-    label: "(1-Basic Concepts) Molar volume, example-10",
+    value: "(2-Module 2) Fundamental Concepts - Unit 1",
+    label: "(2-Module 2) Fundamental Concepts - Unit 1",
   },
   {
-    value: "(1-Basic Concepts) Stoichiometry and example-11+12",
-    label: "(1-Basic Concepts) Stoichiometry and example-11+12",
+    value: "(3-Module 3) Core Principles - Topic A",
+    label: "(3-Module 3) Core Principles - Topic A",
   },
   {
-    value: "(1-Basic Concepts) Limiting reactant",
-    label: "(1-Basic Concepts) Limiting reactant",
+    value: "(4-Module 4) Advanced Concepts - Topic B",
+    label: "(4-Module 4) Advanced Concepts - Topic B",
   },
   {
-    value: "(1-Basic Concepts) Identification of limiting reactant",
-    label: "(1-Basic Concepts) Identification of limiting reactant",
+    value: "(5-Module 5) Practical Applications",
+    label: "(5-Module 5) Practical Applications",
   },
   {
-    value: "(1-Basic Concepts) example-13",
-    label: "(1-Basic Concepts) example-13",
+    value: "(6-Module 6) Case Studies & Examples",
+    label: "(6-Module 6) Case Studies & Examples",
   },
   {
     value: "(1-Basic Concepts) Yield",

@@ -62,7 +62,7 @@ const leaveSchema: yup.ObjectSchema<LeaveFormData> = yup.object({
         if (!leaveFrom || !value) return true;
         const leaveTo = value as Date;
         return leaveTo >= leaveFrom;
-      }
+      },
     ),
   leaveDuration: yup
     .number()
@@ -116,7 +116,6 @@ const LeaveApplicationModalComponent = ({
   }, [calculatedDuration, setValue]);
 
   const onSubmit: SubmitHandler<LeaveFormData> = (data) => {
-    console.log("Form submitted:", data);
     // Call external submit handler if provided
     if (externalSubmit) {
       externalSubmit(data);

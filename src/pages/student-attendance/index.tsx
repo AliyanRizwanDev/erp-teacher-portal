@@ -75,7 +75,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31) // Update to 31 days
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -87,7 +87,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -99,7 +99,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -111,7 +111,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -123,7 +123,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -135,7 +135,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -147,7 +147,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -159,7 +159,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -171,7 +171,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -183,7 +183,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -195,7 +195,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
     {
@@ -207,7 +207,7 @@ export const StudentAttendance = () => {
       ...Object.fromEntries(
         Array(31)
           .fill(0)
-          .map((_, i) => [`day${i + 1}`, "-"])
+          .map((_, i) => [`day${i + 1}`, "-"]),
       ),
     },
   ];
@@ -225,9 +225,8 @@ export const StudentAttendance = () => {
     initialItemsPerPage: 10,
   });
 
-  const onSubmit = (data: StudentAttendanceFormValues) => {
+  const onSubmit = (_data: StudentAttendanceFormValues) => {
     setShowReport(true);
-    console.log(data);
   };
 
   return (
@@ -249,7 +248,7 @@ export const StudentAttendance = () => {
             <InputField
               label="Campus"
               labelClassName="!font-medium"
-              value="Campus_01"
+              value="North Campus"
               className="!rounded-lg !bg-[#e8ebef] cursor-pointer"
               disabled
             />

@@ -236,9 +236,8 @@ export const Results = () => {
     initialItemsPerPage: 10,
   });
 
-  const onSubmit = (data: ResultsFormValues) => {
+  const onSubmit = (_data: ResultsFormValues) => {
     setShowReport(true);
-    console.log(data);
   };
 
   return (
@@ -265,7 +264,7 @@ export const Results = () => {
               labelClassName="!font-medium"
               placeholder="Enter Campus"
               className="!rounded-lg !bg-[#e8ebef]"
-              value="Campus_01"
+              value="North Campus"
               disabled
             />
           </div>
@@ -459,12 +458,12 @@ export const Results = () => {
                             student.grade === "A+"
                               ? "bg-green-600"
                               : student.grade === "A"
-                              ? "bg-green-500"
-                              : student.grade === "B+"
-                              ? "bg-blue-500"
-                              : student.grade === "B"
-                              ? "bg-blue-400"
-                              : "bg-gray-500"
+                                ? "bg-green-500"
+                                : student.grade === "B+"
+                                  ? "bg-blue-500"
+                                  : student.grade === "B"
+                                    ? "bg-blue-400"
+                                    : "bg-gray-500"
                           }`}
                         >
                           {student.grade}

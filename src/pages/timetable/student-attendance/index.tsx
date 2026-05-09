@@ -225,7 +225,7 @@ export const StudentAttendanceTimeTable = () => {
             labelClassName="!font-medium"
             placeholder="Enter Campus"
             className="!rounded-lg !bg-[#e8ebef]"
-            value={"Campus_01"}
+            value={"North Campus"}
           />
         </div>
         <div className="bg-white px-4 pt-4 pb-4 rounded-xl">

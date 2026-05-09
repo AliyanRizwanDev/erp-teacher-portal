@@ -37,7 +37,7 @@ export const ChangePassword = () => {
           <div className="flex justify-end w-full sm:w-fit">
             <Button
               className="bg-primaryBtnBgColor text-white roboto-font text-base py-3 lg:py-5 w-full sm:w-auto rounded-sm"
-              onClick={() => console.log("Clicked")}
+              onClick={() => {}}
             >
               <span className="roboto-font leading-0">Change Password</span>
             </Button>

@@ -28,10 +28,9 @@ export const Nominal = () => {
   });
   const [showReport, setShowReport] = useState(false);
 
-  const onSubmit = (data: NominalFormValues) => {
+  const onSubmit = (_data: NominalFormValues) => {
     // handle form submit
     setShowReport(true);
-    console.log(data);
   };
 
   return (
@@ -59,7 +58,7 @@ export const Nominal = () => {
               placeholder="Enter Campus"
               disabled
               className="!rounded-lg !bg-[#e8ebef]"
-              value="Campus_01"
+              value="North Campus"
             />
           </div>
           <div className="bg-white px-4 pt-4 pb-8 rounded-xl">

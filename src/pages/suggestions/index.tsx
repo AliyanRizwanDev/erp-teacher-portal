@@ -127,7 +127,7 @@ export const Suggestions = () => {
         key: "12",
         no: "12",
         dateTime: "2025-05-06 10:45:21",
-        reason: "API Documentation",
+        reason: "System Documentation",
         status: "Accepted",
       },
       {
@@ -152,7 +152,7 @@ export const Suggestions = () => {
         status: "Accepted",
       },
     ],
-    []
+    [],
   );
 
   // Sort function
@@ -181,7 +181,7 @@ export const Suggestions = () => {
           item.reason.toLowerCase().includes(lowerCaseSearch) ||
           item.dateTime.toLowerCase().includes(lowerCaseSearch) ||
           item.status.toLowerCase().includes(lowerCaseSearch) ||
-          item.no.toLowerCase().includes(lowerCaseSearch)
+          item.no.toLowerCase().includes(lowerCaseSearch),
       );
     }
     // Apply sorting

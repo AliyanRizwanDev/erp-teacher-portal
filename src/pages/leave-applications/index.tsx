@@ -171,7 +171,7 @@ export const LeaveApplications = () => {
         status: "Accepted",
       },
     ],
-    []
+    [],
   );
 
   // Sort function
@@ -204,7 +204,7 @@ export const LeaveApplications = () => {
           item.dateTime.toLowerCase().includes(lowerCaseSearch) ||
           item.status.toLowerCase().includes(lowerCaseSearch) ||
           item.from.toLowerCase().includes(lowerCaseSearch) ||
-          item.to.toLowerCase().includes(lowerCaseSearch)
+          item.to.toLowerCase().includes(lowerCaseSearch),
       );
     }
 
@@ -423,8 +423,7 @@ export const LeaveApplications = () => {
           </DialogHeader>
           <div className="p-4">
             <LeaveApplicationModal
-              onSubmit={(data) => {
-                console.log("Leave application submitted:", data);
+              onSubmit={(_data) => {
                 setConfirmationModal(true);
                 setIsModalOpen(false);
               }}

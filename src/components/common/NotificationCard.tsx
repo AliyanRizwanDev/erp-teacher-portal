@@ -36,11 +36,9 @@ const NotificationCard: React.FC<NotificationCardProps> = ({
   notification,
 }) => {
   const handleRemove = () => {
-    console.log("Remove Notification", notification.id);
     // Implement actual remove logic here
   };
   const handleTurnOff = () => {
-    console.log("Turn off notifications from this user", notification.id);
     // Implement actual turn off logic here
   };
 

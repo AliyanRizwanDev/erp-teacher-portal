@@ -18,7 +18,7 @@ interface CourseCoverageFormValues {
 export const CourseCoverage = () => {
   const { control, handleSubmit } = useForm<CourseCoverageFormValues>({
     defaultValues: {
-      campus: "Campus_01",
+      campus: "North Campus",
       program: "Intermediate",
       discipline: "FSc (Pre-Med)",
       section: "RMB1",
@@ -28,9 +28,7 @@ export const CourseCoverage = () => {
     },
   });
 
-  const onSubmit = (data: CourseCoverageFormValues) => {
-    console.log("Form submitted:", data);
-  };
+  const onSubmit = (_data: CourseCoverageFormValues) => {};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

@@ -61,7 +61,7 @@ const Dashboard = () => {
                     Department
                   </div>
                   <div>
-                    <span className="font-bold">Workplace:</span> Campus_01
+                    <span className="font-bold">Workplace:</span> North Campus
                     (Main Campus)
                   </div>
                 </div>

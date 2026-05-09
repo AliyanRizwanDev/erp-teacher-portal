@@ -12,6 +12,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { toast } from "@/hooks/use-toast";
 
 interface ComplaintFormData {
   complaintType: string;
@@ -42,8 +43,10 @@ export const ComplaintsApplicationModal = () => {
   });
 
   const onSubmit = (data: ComplaintFormData) => {
-    console.log("Form submitted:", data);
-    // Handle form submission logic here
+    toast({
+      title: "Application Submitted",
+      description: `Your complaint of type "${data.complaintType}" has been submitted successfully!`,
+    });
   };
 
   return (
@@ -64,7 +67,7 @@ export const ComplaintsApplicationModal = () => {
                     <SelectTrigger
                       className={cn(
                         "h-10 w-full rounded-md border cursor-pointer",
-                        errors.complaintType && "border-red-500"
+                        errors.complaintType && "border-red-500",
                       )}
                     >
                       <SelectValue placeholder="Choose..." />
@@ -106,7 +109,7 @@ export const ComplaintsApplicationModal = () => {
                     rows={6}
                     className={cn(
                       "w-full resize-none rounded-md border",
-                      errors.complaintDetail && "border-red-500"
+                      errors.complaintDetail && "border-red-500",
                     )}
                     {...field}
                   />

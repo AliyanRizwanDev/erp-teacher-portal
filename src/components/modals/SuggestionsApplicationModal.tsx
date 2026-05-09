@@ -12,6 +12,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { toast } from "@/hooks/use-toast";
 
 interface SuggestionFormData {
   suggestionType: string;
@@ -42,8 +43,10 @@ export const SuggestionApplicationModal = () => {
   });
 
   const onSubmit: SubmitHandler<SuggestionFormData> = (data) => {
-    console.log("Form submitted:", data);
-    // Handle form submission logic here
+    toast({
+      title: "Application Submitted",
+      description: `Your suggestion of type "${data.suggestionType}" has been submitted successfully!`,
+    });
   };
 
   return (
@@ -63,7 +66,7 @@ export const SuggestionApplicationModal = () => {
                     <SelectTrigger
                       className={cn(
                         "h-10 w-full rounded-md border cursor-pointer",
-                        errors.suggestionType && "border-red-500"
+                        errors.suggestionType && "border-red-500",
                       )}
                     >
                       <SelectValue placeholder="Choose..." />
@@ -104,7 +107,7 @@ export const SuggestionApplicationModal = () => {
                     rows={6}
                     className={cn(
                       "w-full resize-none rounded-md border",
-                      errors.suggestionDetail && "border-red-500"
+                      errors.suggestionDetail && "border-red-500",
                     )}
                     {...field}
                   />

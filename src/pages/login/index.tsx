@@ -8,6 +8,7 @@ import {
   CampusDropdownOptions,
   ProjectDropdownOptions,
 } from "../../utils/data";
+import { toast } from "@/hooks/use-toast";
 
 export const Login = () => {
   const nav = useNavigate();
@@ -26,9 +27,12 @@ export const Login = () => {
     },
   });
 
-  const onSubmit = (data: unknown) => {
-    console.log("Form submitted:", data);
+  const onSubmit = () => {
     nav(ROUTES.DASHBOARD);
+    toast({
+      title: "Login Successful",
+      description: "You have successfully logged in!",
+    });
   };
 
   const onReset = () => {

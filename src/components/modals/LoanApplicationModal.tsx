@@ -64,7 +64,7 @@ const loanSchema: yup.ObjectSchema<LoanFormData> = yup.object({
         if (!loanFrom || !value) return true;
         const loanTo = value as Date;
         return loanTo >= loanFrom;
-      }
+      },
     ),
   loanDuration: yup
     .number()
@@ -128,7 +128,6 @@ const LoanApplicationModalComponent = ({
   }, [calculatedDuration, setValue]);
 
   const onSubmit: SubmitHandler<LoanFormData> = (data) => {
-    console.log("Form submitted:", data);
     if (externalSubmit) {
       externalSubmit(data);
     }

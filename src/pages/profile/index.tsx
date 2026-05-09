@@ -11,12 +11,8 @@ export const Profile = () => {
     employmentDate: "08-06-2024",
     designation: "Senior Educator - Physics",
     department: "Academic Department",
-    workplace: "Campus_01 (Main Office)",
+    workplace: "North Campus",
   });
-
-  // const handleUpdate = () => {
-  //   console.log("Updating profile data:", profileData);
-  // };
 
   return (
     <div className="py-9 px-4 sm:px-5 lg:px-10 bg-primaryBgColor min-h-screen">
@@ -138,7 +134,7 @@ export const Profile = () => {
         <div className="w-full flex items-center justify-end mt-8">
           <Button
             className="bg-primaryBtnBgColor text-white roboto-font text-base py-3 lg:py-5 w-full sm:w-auto rounded-sm lg:px-12"
-            onClick={() => console.log("Clicked")}
+            onClick={() => {}}
           >
             Update
           </Button>

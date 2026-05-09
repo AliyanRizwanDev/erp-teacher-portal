@@ -23,9 +23,7 @@ export const AttendanceReport = () => {
     },
   });
 
-  const onSubmit = (data: AttendanceReportFormValues) => {
-    console.log(data);
-  };
+  const onSubmit = (_data: AttendanceReportFormValues) => {};
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -40,7 +38,7 @@ export const AttendanceReport = () => {
               labelClassName="!font-medium"
               placeholder="Enter Campus"
               className="!rounded-lg !bg-[#e8ebef]"
-              value={"Campus_01"}
+              value={"North Campus"}
               disabled
             />
           </div>
