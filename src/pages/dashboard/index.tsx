@@ -86,6 +86,7 @@ const Dashboard = () => {
               image={item.image}
               title={item.title}
               navLink={item.navLink}
+              onclick={item.onclick}
             />
           ))}
         </div>
